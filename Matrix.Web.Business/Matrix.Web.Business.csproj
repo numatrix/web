@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.6.9" />
+    <PackageReference Include="Ensure.That" Version="8.1.1" />
+    <PackageReference Include="Matrix.netcoreapp" Version="1.0.0" />
+    <PackageReference Include="Matrix.Framework" Version="1.0.0" />
+    <PackageReference Include="Matrix.Agent.Configurator.Model" Version="1.0.0" />
+    <PackageReference Include="Matrix.Agent.Directory.Model" Version="1.0.0" />
+    <PackageReference Include="Matrix.Agent.Journal.Model" Version="1.0.0" />
+    <PackageReference Include="Matrix.Agent.Postman.Model" Version="1.0.0" />
+    <PackageReference Include="Matrix.Agent.Registry.Model" Version="1.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+﻿@model IList<Matrix.Agent.Registry.Model.Application>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><b>Applications</b></h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td width="300px"><b>ID</b></td>
+                    <td><b>Name</b></td>
+                    <td><b>Description</b></td>
+                    <td style="text-align:right"><b>Area</b></td>
+                    <td style="text-align:center" width="10px"><span class="glyphicon glyphicon-trash"></span></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var i in Model)
+                {
+                    <tr>
+                        <td>@i.Id</td>
+                        <td>@i.Name</td>
+                        <td>@i.Description</td>
+                        <td style="font-size:small; text-align:right">
+                            <a href="/applications/@i.Id/configuration">Configuration</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/users">Users</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/usergroups">Groups</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/userroles">Roles</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/emails">Emails</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/sms">SMS</a>
+                            &nbsp;|&nbsp;
+                            <a href="/applications/@i.Id/logs">Logs</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-xs btn-danger" disabled>
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
